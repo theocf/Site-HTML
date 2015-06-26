@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,296 +27,293 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <![endif]-->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
       function initialize() {
 
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(-22.889648, -46.937008),
-          zoom: 12,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
+      var mapCanvas = document.getElementById('map-canvas');
+      var mapOptions = {
+      center: new google.maps.LatLng(-22.889648, -46.937008),
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions)
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-</head>
+  </head>
 
-<body id="page-top" class="index">
-
-
-
+  <body id="page-top" class="index">
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="img-responsive" src="img/profile.png" alt="">
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default">
-        <div class="container" data-spy="affix" data-offset-top="370" id="nav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--<a class="navbar-brand" href="#page-top"></a>-->
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll hidden-xs hidden-sm">
-                        <a href="#page-top">Início</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">A cerimônia</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Sobre a gente</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Confirme sua presença</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#mensagens">Mensagens</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#lista">Lista de presentes</a>
-                    </li>
-                     <li class="page-scroll">
-                        <a href="#musica">Peça uma música</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <div class="container" data-spy="affix" data-offset-top="370" id="nav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href="#page-top"></a>-->
         </div>
-        <!-- /.container-fluid -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li class="page-scroll hidden-xs hidden-sm">
+              <a href="#page-top">Início</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#about">A cerimônia</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#portfolio">Sobre a gente</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#contact">Confirme sua presença</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#mensagens">Mensagens</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#lista">Lista de presentes</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#musica">Peça uma música</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
     </nav>
 
     <section id="fotos">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/fotos1.jpg" alt="">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="img-responsive" src="img/fotos1.jpg" alt="">
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Cerimonia Section -->
     <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 maps hidden-xs hidden-sm">
-                    <div id="map-canvas"></div>
-                </div>
-                <div class="col-md-6 col-xs-12 infos pdtop pdbot">
-                  <div class="col-sm-10 col-sm-offset-1">
-                    <h2>A cerimônia</h2>
-                    <div class="about-labels">
-                        <p>Dia</p>
-                        <p>Horário</p>
-                        <p>Local</p>
-                    </div>
-                    <div class="about-infos">
-                        <p>5 de setembro de 2015</p>
-                        <p>Início às 18:30h</p>
-                        <p>Estação Marupiara<br>Rua Manuel Saturnino do Amaral, 29<br>Joaquim Egídio - Campinas, São Paulo</p>
-                    </div>
-                    <div class="about-resto">
-                        <p class="linkdicas visible-xs visible-sm">
-                        <a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Marupiara/@-22.889653,-46.937016,15z/data=!4m2!3m1!1s0x0:0x3954318d05385a33">Abrir no Google Maps.</a>
-                        </p>
-                        <p class="linkdicas">
-                        Dicas da região: <a data-toggle="modal" data-target="#myModal"> hotéis, pousadas, salões.</a>
-                        </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 maps hidden-xs hidden-sm">
+            <div id="map-canvas"></div>
+          </div>
+          <div class="col-md-6 col-xs-12 infos pdtop pdbot">
+            <div class="col-sm-10 col-sm-offset-1">
+              <h2>A cerimônia</h2>
+              <div class="about-labels">
+                <p>Dia</p>
+                <p>Horário</p>
+                <p>Local</p>
+              </div>
+              <div class="about-infos">
+                <p>5 de setembro de 2015</p>
+                <p>Início às 18:30h</p>
+                <p>Estação Marupiara<br>Rua Manuel Saturnino do Amaral, 29<br>Joaquim Egídio - Campinas, São Paulo</p>
+              </div>
+              <div class="about-resto">
+                <p class="linkdicas visible-xs visible-sm">
+                  <a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Marupiara/@-22.889653,-46.937016,15z/data=!4m2!3m1!1s0x0:0x3954318d05385a33">Abrir no Google Maps.</a>
+                </p>
+                <p class="linkdicas">
+                  Dicas da região: <a data-toggle="modal" data-target="#myModal"> hotéis, pousadas, salões.</a>
+                </p>
 
 
-                        <!--<button class="btn btn-success btn-lg" type="submit">Abrir no Google Maps</button>-->
-                            <button class="btn btn-success btn-lg" type="submit">Adicionar ao Google Calendar</button>               
-                    </div>
-                  </div>
-                </div>
+                <!--<button class="btn btn-success btn-lg" type="submit">Abrir no Google Maps</button>-->
+                <button class="btn btn-success btn-lg" type="submit">Adicionar ao Google Calendar</button>               
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="fotos">
-        <div class="container hidden-xs">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/fotos2.jpg" alt="">
-                </div>
-            </div>
+      <div class="container hidden-xs">
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="img-responsive" src="img/fotos2.jpg" alt="">
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Sobre a gente Section -->
     <section id="portfolio">
-        <div class="container">
-            <div class="row pdtop pdbot">
-                <div class="col-sm-4 col-sm-offset-0 col-xs-offset-4 col-xs-8 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-1">
-                    <img src="img/iet.png" class="img-responsive" alt=""></a>
-                </div>
-                <div class="col-sm-8 col-sm-offset-0 col-md-7 col-md-offset-1 col-lg-8 col-lg-offset-1">
-                     <h2>Sobre a gente</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row pdtop pdbot">
+          <div class="col-sm-4 col-sm-offset-0 col-xs-offset-4 col-xs-8 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-1">
+            <img src="img/iet.png" class="img-responsive" alt="">
+          </div>
+          <div class="col-sm-8 col-sm-offset-0 col-md-7 col-md-offset-1 col-lg-8 col-lg-offset-1">
+            <h2>Sobre a gente</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
 
     <!-- Confirma Section -->
     <section id="contact">
-        <div class="container">
-            <div class="row pdtop">
-                <div class="col-sm-6">
-                   <div class="col-sm-10 col-sm-offset-2 col-md-offset-1">
-                    <h2>Confirme sua presença</h2>
-                   </div>
-                </div>
+      <div class="container">
+        <div class="row pdtop">
+          <div class="col-sm-6">
+            <div class="col-sm-10 col-sm-offset-2 col-md-offset-1">
+              <h2>Confirme sua presença</h2>
             </div>
-            <div class="row pdbot">
-                <div class="col-md-6">
-                  <div class="col-sm-10 col-sm-offset-1">
-                    <p>Amigos e Familiares,
-                    A confirmação da presença é extremamente importante para a organização do nosso grande dia. Por favor, não deixe de fazê-la.</p> <p>Se você preferir confirmar por email ou telefone, não tem problema!</p>
-                    <hr class="visible-xs visible-sm col-xs-1"><div class="clearfix visible-xs-block"></div>
-                  </div>
-                </div>
-                  <div class="col-md-5 col-md-offset-0 col-xs-10 col-sm-offset-1 col-sm-10">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentNames" id="confirmForm" novalidate>
-                        <div class="row control-group forcemarginleft">
-                        <p><strong>Podemos contar com você no dia da cerimônia?</strong></p>
-                            <div class="radiobutton col-xs-12">
-                                <input type="radio" name="radios" id="radio_1"/>
-                                <label for="radio_1">Sim, estarei lá!</label>
-                            </div>
-                            <div class="radiobutton col-xs-12">
-                                <input type="radio" name="radios" id="radio_2"/>
-                                <label for="radio_2">Infelizmente não poderei comparecer</label>
-                            </div>
-                        </div>
-                        <div class="control-group forcemarginleft">
-                            <div class="form-group floating-label-form-group controls">
-                                <label>Nome dos convidados</label>
-                                <textarea rows="5" class="form-control" placeholder="Nome dos convidados" id="convidados" required data-validation-required-message="Escreva o nome dos convidados."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success-con"></div>
-                        <div class="forcemarginleft">
-                            <div class="form-group">
-                                <button type="submit" name="submit-con" id="submit-con" class="btn btn-success btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row pdbot">
+          <div class="col-md-6">
+            <div class="col-sm-10 col-sm-offset-1">
+              <p>Amigos e Familiares,
+                A confirmação da presença é extremamente importante para a organização do nosso grande dia. Por favor, não deixe de fazê-la.</p> <p>Se você preferir confirmar por email ou telefone, não tem problema!</p>
+              <hr class="visible-xs visible-sm col-xs-1"><div class="clearfix visible-xs-block"></div>
+            </div>
+          </div>
+          <div class="col-md-5 col-md-offset-0 col-xs-10 col-sm-offset-1 col-sm-10">
+            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+            <form name="sentNames" id="confirmForm" novalidate>
+              <div class="row control-group forcemarginleft">
+                <p><strong>Podemos contar com você no dia da cerimônia?</strong></p>
+                <div class="radiobutton col-xs-12">
+                  <input type="radio" name="radios" id="radio_1" value="true" checked />
+                  <label for="radio_1">Sim, estarei lá!</label>
+                </div>
+                <div class="radiobutton col-xs-12">
+                  <input type="radio" name="radios" id="radio_2" value="false" />
+                  <label for="radio_2">Infelizmente não poderei comparecer</label>
+                </div>
+              </div>
+              <div class="control-group forcemarginleft">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Nome dos convidados</label>
+                  <textarea rows="5" class="form-control" placeholder="Nome dos convidados" id="convidados" required data-validation-required-message="Escreva o nome dos convidados."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success-con"></div>
+              <div class="forcemarginleft">
+                <div class="form-group">
+                  <button type="submit" name="submit-con" id="submit-con" class="btn btn-success btn-lg">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="fotos">
-        <div class="container hidden-xs">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/fotos3.jpg" alt="">
-                </div>
-            </div>
+      <div class="container hidden-xs">
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="img-responsive" src="img/fotos3.jpg" alt="">
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Mensagens Section -->
     <section id="mensagens">
-        <div class="container">
-            <div class="row pdtop">
-                <div class="col-sm-6">
-                   <div class="col-sm-10 col-sm-offset-2 col-md-offset-1">
-                    <h2>Mensagens</h2>
-                   </div>
-                </div>
+      <div class="container">
+        <div class="row pdtop">
+          <div class="col-sm-6">
+            <div class="col-sm-10 col-sm-offset-2 col-md-offset-1">
+              <h2>Mensagens</h2>
             </div>
-            <div class="row pdbot">
-                <div class="col-md-6">
-                  <div class="col-sm-10 col-sm-offset-1">
-                    <p>Mande-nos uma mensagem!</p>
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls">
-                                    <label>Seu nome</label>
-                                    <input type="nome" class="form-control" placeholder="Nome" id="nome" required data-validation-required-message="Por favor escreva o seu nome.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls">
-                                <label>Mensagem</label>
-                                <textarea rows="5" class="form-control" placeholder="Mensagem" id="mensagem" required data-validation-required-message="Por favor digite uma mensagem."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success-msg"></div>
-                        <div class="">
-                            <div class="form-group">
-                                <button type="submit" name="submit" id="submit-msg" class="btn btn-success btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                </div>
-                <div class="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-10">
-                    <div class="slider">
-                          <div class="arrows">
-                            <a class="previous" href="#msgcards">&#xf053;</a>
-                            <a class="next" href="#msgcards">&#xf054;</a>
-                          </div>
-                          <div class="slides id="msgcards"">
-                                <div class="slide active blue box-shadow">
-                                    <h2>João</h2>
-                                    <p>Clocks helps you break the barriers of space and time to get information for any city you like. You can search for and organise your favorite cities so that you can easily find out the correct local time.Any city you like. You can search for and organise your favorite cities.</p>
-                                </div>
-                                <div class="slide blue box-shadow">
-                                    <h2>Maria</h2>
-                                    <p>Nobody wants to miss out on important events, but sometimes, it’s hard to find the time in another city. Clocks+ lets you set alarms for your favorite cities in a simple and intuitive way.</p>
-                                </div>
-                                <div class="slide blue box-shadow">
-                                    <h2>José</h2>
-                                    <p>Clocks wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing.</p>
-                                </div>
-                                <div class="slide blue box-shadow">
-                                    <h2>Ana</h2>
-                                    <p>Nobody wants to miss out on important events.    Clocks wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing.</p>
-                                </div>
-                            </div>
-                            <div class="bullets">
-                            </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row pdbot">
+          <div class="col-md-6">
+            <div class="col-sm-10 col-sm-offset-1">
+              <p>Mande-nos uma mensagem!</p>
+              <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+              <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+              <form name="sentMessage" id="contactForm"  novalidate>
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls">
+                    <label>Seu nome</label>
+                    <input type="nome" class="form-control" placeholder="Nome" id="nome" required data-validation-required-message="Por favor escreva o seu nome.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls">
+                    <label>Mensagem</label>
+                    <textarea rows="5" class="form-control" placeholder="Mensagem" id="mensagem" required data-validation-required-message="Por favor digite uma mensagem."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <br>
+                <div id="success-msg"></div>
+                <div class="">
+                  <div class="form-group">
+                    <button type="submit" name="submit" id="submit-msg" class="btn btn-success btn-lg">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-10">
+            <div class="slider">
+              <div class="arrows">
+                <a class="previous" href="#msgcards">&#xf053;</a>
+                <a class="next" href="#msgcards">&#xf054;</a>
+              </div>
+              <div class="slides id="msgcards"">
+                <div class="slide active blue box-shadow">
+                  <h2>João</h2>
+                  <p>Clocks helps you break the barriers of space and time to get information for any city you like. You can search for and organise your favorite cities so that you can easily find out the correct local time.Any city you like. You can search for and organise your favorite cities.</p>
+                </div>
+                <div class="slide blue box-shadow">
+                  <h2>Maria</h2>
+                  <p>Nobody wants to miss out on important events, but sometimes, it’s hard to find the time in another city. Clocks+ lets you set alarms for your favorite cities in a simple and intuitive way.</p>
+                </div>
+                <div class="slide blue box-shadow">
+                  <h2>José</h2>
+                  <p>Clocks wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing.</p>
+                </div>
+                <div class="slide blue box-shadow">
+                  <h2>Ana</h2>
+                  <p>Nobody wants to miss out on important events.    Clocks wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing.</p>
+                </div>
+              </div>
+              <div class="bullets">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
@@ -324,78 +321,78 @@
 
     <!-- Lista e Musica Section -->
     <section id="lista">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 presentes pdtop pdbot">
-                   <div class="col-sm-10 col-sm-offset-1"> 
-                    <h2>LISTA DE PRESENTES</h2>
-                    <p>A lista de presentes está no site ICasei.</p>
-                    <p class="espinf30">Legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.</p>
-                    <form action="https://sites.icasei.com.br/isaetheo/pt_br/store/index/9?id_loja=1">
-                    <button class="btn btn-success btn-lg" type="submit">Acessar a lista</button>
-                    </form>
-                   </div> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 presentes pdtop pdbot">
+            <div class="col-sm-10 col-sm-offset-1"> 
+              <h2>LISTA DE PRESENTES</h2>
+              <p>A lista de presentes está no site ICasei.</p>
+              <p class="espinf30">Legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.</p>
+              <form action="https://sites.icasei.com.br/isaetheo/pt_br/store/index/9?id_loja=1">
+                <button class="btn btn-success btn-lg" type="submit">Acessar a lista</button>
+              </form>
+            </div> 
+          </div>
+          <div id="musica" class="col-md-6 col-sm-12 musica pdtop pdbot">
+            <div class="col-sm-10 col-sm-offset-1"> 
+              <h2>PEÇA UMA MÚSICA</h2>
+              <p>Jantar dançante! Quer dançar uma música com os noivos?</p>
+              <form name="musica" id="musicForm" novalidate>
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls">
+                    <label>Artista </label>
+                    <input type="text" class="form-control" placeholder="Artista" id="artista" required data-validation-required-message="Por favor escreva o nome do artista.">
+                    <p class="help-block text-danger"></p>
+                  </div>
                 </div>
-                <div id="musica" class="col-md-6 col-sm-12 musica pdtop pdbot">
-                   <div class="col-sm-10 col-sm-offset-1"> 
-                    <h2>PEÇA UMA MÚSICA</h2>
-                    <p>Jantar dançante! Quer dançar uma música com os noivos?</p>
-                    <form name="musica" id="musicForm" novalidate>
-                        <div class="control-group">
-                                <div class="form-group floating-label-form-group controls">
-                                    <label>Artista </label>
-                                    <input type="text" class="form-control" placeholder="Artista" id="artista" required data-validation-required-message="Por favor escreva o nome do artista.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls">
-                                <label>Música</label>
-                                <input type="text" class="form-control" placeholder="Música" id="musica" required data-validation-required-message="Por favor escreve o nome da música."></input>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success-mus"></div>
-                        <div class="">
-                            <div class="form-group">
-                                <button type="submit" name="submit-mus" id="submit-mus" class="btn btn-success btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                   </div> 
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls">
+                    <label>Música</label>
+                    <input type="text" class="form-control" placeholder="Música" id="musica" required data-validation-required-message="Por favor escreve o nome da música."></input>
+                    <p class="help-block text-danger"></p>
+                  </div>
                 </div>
-            </div>
+                <br>
+                <div id="success-mus"></div>
+                <div class="">
+                  <div class="form-group">
+                    <button type="submit" name="submit-mus" id="submit-mus" class="btn btn-success btn-lg">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div> 
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="fotos">
-        <div class="container hidden-xs">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/fotos4.jpg" alt="">
-                </div>
-            </div>
+      <div class="container hidden-xs">
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="img-responsive" src="img/fotos4.jpg" alt="">
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="text-center">    
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Obrigado por chegar até aqui! (:
-                    </div>
-                </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Obrigado por chegar até aqui! (:
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <!--<div class="scroll-top page-scroll visible-xs visible-sm">
         <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
+          <i class="fa fa-chevron-up"></i>
         </a>
     </div>-->
 
@@ -409,29 +406,29 @@
           </div>
           <div class="modal-body">
             
-        <h3>Salões de beleza</h3>
-        <p>
-        <a href="http://www.aguinaldocabelos.com.br" target="_blank">Aguinaldo Cabelos</a> - Cambuí<br />
-        <a href="http://www.acbeleza.com.br" target="_blank"> AC BelezaBarão</a> - Barão<br />
-        <a href="https://www.facebook.com/studium.cabelos?fref=ts" target="_blank">Studium Cabelos</a> (Facebook) - Cambuí 
-        </p>
-        <h3>Hotéis</h3>
-        <p>
-        <a href="http://www.accorhotels.com/pt-br/hotel-5469-ibis-campinas/index.shtml" target="_blank">Ibis Campinas Aquidaban</a><br />
-        <a href="http://www.mercure.com/pt-br/hotel-5181-mercure-campinas-hotel/index.shtml" target="_blank">Mercure Campinas</a><br />
-        <a href="http://hotelariabrasil.com.br/hoteis/matiz/hotel-matiz-barao-geraldo/" target="_blank">Hotel Matiz
-        </a> - Barão Geraldo<br />
-        <a href="http://www.atlanticahotels.com.br/" target="_blank">Sleep In - Galleria Hotel</a>
-        
-        </p>
-        <h3>Shoppings</h3>
-        <p>
-        <a href="http://www.iguatemi.com.br/campinas" target="_blank">Shopping Iguatemi</a><br />
-        <a href="http://iguatemi.com.br/galleriashopping" target="_blank">Galleria Shopping</a>
-        </p>
+            <h3>Salões de beleza</h3>
+            <p>
+              <a href="http://www.aguinaldocabelos.com.br" target="_blank">Aguinaldo Cabelos</a> - Cambuí<br />
+              <a href="http://www.acbeleza.com.br" target="_blank"> AC BelezaBarão</a> - Barão<br />
+              <a href="https://www.facebook.com/studium.cabelos?fref=ts" target="_blank">Studium Cabelos</a> (Facebook) - Cambuí 
+            </p>
+            <h3>Hotéis</h3>
+            <p>
+              <a href="http://www.accorhotels.com/pt-br/hotel-5469-ibis-campinas/index.shtml" target="_blank">Ibis Campinas Aquidaban</a><br />
+              <a href="http://www.mercure.com/pt-br/hotel-5181-mercure-campinas-hotel/index.shtml" target="_blank">Mercure Campinas</a><br />
+              <a href="http://hotelariabrasil.com.br/hoteis/matiz/hotel-matiz-barao-geraldo/" target="_blank">Hotel Matiz
+              </a> - Barão Geraldo<br />
+              <a href="http://www.atlanticahotels.com.br/" target="_blank">Sleep In - Galleria Hotel</a>
+              
+            </p>
+            <h3>Shoppings</h3>
+            <p>
+              <a href="http://www.iguatemi.com.br/campinas" target="_blank">Shopping Iguatemi</a><br />
+              <a href="http://iguatemi.com.br/galleriashopping" target="_blank">Galleria Shopping</a>
+            </p>
           </div>
           <!--<div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
           </div>-->
         </div>
       </div>
@@ -468,6 +465,6 @@
     <!--<script src="js/stickynav.js"></script>-->
 
 
-</body>
+  </body>
 
 </html>
